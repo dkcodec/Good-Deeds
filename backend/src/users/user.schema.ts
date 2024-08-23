@@ -17,7 +17,7 @@ export class User extends Document {
   friends: string[];
 
   @Prop({ type: [{ type: String, ref: 'Deed' }] })
-  deeds: Deed[];  // Добавляем поле для добрых дел
+  deeds: Deed[];  
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
